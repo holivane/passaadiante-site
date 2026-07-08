@@ -11,18 +11,29 @@ doadores a estudantes que precisam de recursos educacionais.
 
 | Nome | GitHub |
 |------|--------|
-| Francisco Getulio | @usuario |
 | Holivane Holanda | @holivane |
-| Rodrigo Bezerra Rodrigues | @usuario |
-| Sara Ferreira | @usuario |
+| Rodrigo Bezerra Rodrigues | @orodrigobezerra |
+| Sara Ferreira | @saraferreira10 |
 
 ## 🛠️ Tecnologias
 
-> A definir pela equipe.
+- HTML5
+- CSS3
+- JavaScript
 
 ## 📁 Estrutura do Projeto
 
-> A definir conforme o desenvolvimento avança.
+```
+passaadiante-site/
+├── css/
+│   └── style.css
+├── img/
+├── js/
+│   └── script.js
+├── paginas/
+│   └── sobre-o-projeto.html
+└── index.html
+```
 
 ## 📄 Licença
 
