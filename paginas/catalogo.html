@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de materiais | Passa Adiante</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../img/logo.png" alt="Passa Adiante Logo">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#about-section">Sobre</a></li>
+                <li><a href="../index.html#how-to-participate-section">Como participar</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="../index.html#contact-section">Contato</a></li>
+            </ul>
+            <button>Entrar</button>
+            <button>Cadastre-se</button>
+        </nav>
+    </header>
+
+    <main>
+        <!--Seção de Catálogo-->
+        <section id="catalog-section">
+            <h1>Catálogo de materiais</h1>
+            <p>Explore os materiais escolares disponíveis para doação. Use os filtros para encontrar o que você
+                precisa por categoria ou estado de conservação.</p>
+
+            <!--Filtros-->
+            <form id="catalog-filters">
+                <label for="filter-category">Categoria</label>
+                <select id="filter-category" name="category">
+                    <option value="" selected>Todas as categorias</option>
+                    <option value="livros">Livros</option>
+                    <option value="cadernos">Cadernos</option>
+                    <option value="mochilas">Mochilas</option>
+                    <option value="material-escrita">Material de escrita</option>
+                    <option value="artes">Artes</option>
+                </select>
+
+                <label for="filter-condition">Estado de conservação</label>
+                <select id="filter-condition" name="condition">
+                    <option value="" selected>Todos os estados</option>
+                    <option value="novo">Novo</option>
+                    <option value="seminovo">Seminovo</option>
+                    <option value="usado">Usado</option>
+                </select>
+
+                <button type="submit">Filtrar</button>
+            </form>
+            <!--Fim dos Filtros-->
+
+            <!--Itens do catálogo-->
+            <article>
+                <figure>
+                    <img src="../img/item-image.jpg" alt="Kit de Lápis de Cor 48 unidades">
+                    <figcaption>Artes</figcaption>
+                </figure>
+
+                <small>Usado</small>
+
+                <h3>Kit de Lápis de Cor 48un.</h3>
+
+                <ul>
+                    <li>📍 Fortaleza, CE</li>
+                    <li>👤 Doado por M. Oliveira</li>
+                </ul>
+
+                <button type="button">Tenho Interesse</button>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="../img/item-image.jpg" alt="Mochila Escolar Reforçada">
+                    <figcaption>Mochilas</figcaption>
+                </figure>
+
+                <small>Seminovo</small>
+
+                <h3>Mochila Escolar Reforçada</h3>
+
+                <ul>
+                    <li>📍 Caucaia, CE</li>
+                    <li>👤 Doado por R. Bezerra</li>
+                </ul>
+
+                <button type="button">Tenho Interesse</button>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="../img/item-image.jpg" alt="Coleção de Livros Didáticos">
+                    <figcaption>Livros</figcaption>
+                </figure>
+
+                <small>Novo</small>
+
+                <h3>Coleção de Livros Didáticos</h3>
+
+                <ul>
+                    <li>📍 Fortaleza, CE</li>
+                    <li>👤 Doado por S. Ferreira</li>
+                </ul>
+
+                <button type="button">Tenho Interesse</button>
+            </article>
+            <!--Fim dos Itens do catálogo-->
+        </section>
+        <!--Fim da Seção de Catálogo-->
+    </main>
+
+    <footer>
+        © 2026 PassaAdiante - Todos os direitos reservados
+    </footer>
+</body>
+
+</html>
