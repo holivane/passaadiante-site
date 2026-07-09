@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Passa Adiante</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../img/logo.png" alt="Passa Adiante Logo">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="sobre-o-projeto.html">Sobre</a></li>
+                <li><a href="../index.html#how-to-participate-section">Como participar</a></li>
+                <li><a href="../index.html#catalog-section">Catálogo</a></li>
+                <li><a href="../index.html#contact-section">Contato</a></li>
+            </ul>
+            <button>Entrar</button>
+            <button>Cadastre-se</button>
+        </nav>
+    </header>
+
+    <main>
+        <!--Seção de Contato-->
+        <section id="contact-section">
+            <h1>Contato</h1>
+            <p>Entre em contato conosco preenchendo os dados abaixo e enviando sua mensagem.</p>
+            <form action="/contato" method="POST">
+
+                <div>
+                    <label for="nome">Nome</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="assunto">Assunto</label>
+                    <input
+                        type="text"
+                        id="assunto"
+                        name="assunto"
+                    >
+                </div>
+
+                <div>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="6"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit">
+                    Enviar
+                </button>
+
+            </form>
+        </section>
+        <!--Fim da Seção de Contato-->
+    </main>
+
+    <footer>
+        © 2026 PassaAdiante - Todos os direitos reservados
+    </footer>
+</body>
+
+</html>
