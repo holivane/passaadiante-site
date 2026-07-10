@@ -31,6 +31,9 @@ passaadiante-site/
 ├── js/
 │   └── script.js
 ├── paginas/
+│   ├── catalogo.html
+│   ├── como-participar.html
+│   ├── contato.html
 │   └── sobre-o-projeto.html
 └── index.html
 ```
