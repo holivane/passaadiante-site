@@ -12,7 +12,7 @@ doadores a estudantes que precisam de recursos educacionais.
 | Nome | GitHub |
 |------|--------|
 | Holivane Holanda | @holivane |
-| Rodrigo Bezerra Rodrigues | @orodrigobezerra |
+| Rodrigo Bezerra | @orodrigobezerra |
 | Sara Ferreira | @saraferreira10 |
 
 ## 🛠️ Tecnologias
@@ -37,6 +37,18 @@ passaadiante-site/
 │   └── sobre-o-projeto.html
 └── index.html
 ```
+
+## 🚀 Entregas
+
+### Etapa 1 — Estrutura inicial do projeto (PF1)
+
+Estrutura básica do site em HTML, com organização de pastas e navegação entre as páginas:
+
+- `index.html` com `header`, `nav`, `main`, `section` e `footer`;
+- Páginas internas criadas: `sobre-o-projeto.html`, `catalogo.html`, `como-participar.html` e `contato.html`;
+- Menu de navegação conectando todas as páginas;
+- Arquivos organizados em `css/`, `js/`, `img/` e `paginas/`;
+- `style.css` e `script.js` criados (ainda vazios, conforme previsto para esta etapa).
 
 ## 📄 Licença
 
