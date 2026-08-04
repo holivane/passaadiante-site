@@ -1,117 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/style.css">
-        <script src="../js/script.js"></script>
-        <title>Catálogo de materiais | Passa Adiante</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+    <title>Catálogo de materiais | Passa Adiante</title>
+</head>
 
-    <body>
-        <header>
-            <nav>
+<body>
+    <header class="header">
+        <nav class="menu">
+            <div class="menu__logo">
                 <img src="../img/logo.svg" alt="Passa Adiante Logo">
+            </div>
+
+            <ul class="menu__list">
+                <li class="menu__item"><a href="../index.html" class="menu__link">Início</a></li>
+                <li class="menu__item"><a href="./sobre-o-projeto.html" class="menu__link">Sobre</a></li>
+                <li class="menu__item"><a href="./como-participar.html" class="menu__link">Como participar</a></li>
+                <li class="menu__item menu__item--active"><a href="./catalogo.html" class="menu__link">Catálogo</a></li>
+                <li class="menu__item"><a href="./contato.html" class="menu__link">Contato</a></li>
+            </ul>
+
+            <div class="menu__actions">
+                <button class="btn btn--primary">Entrar</button>
+                <button class="btn btn--secondary">Cadastre-se</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="catalog-section">
+            <h1>Catálogo de materiais</h1>
+            <p>Explore os materiais escolares disponíveis para doação. Use os filtros para encontrar o que você
+                precisa por categoria ou estado de conservação.</p>
+
+            <form id="catalog-filters">
+                <label for="filter-category">Categoria</label>
+                <select id="filter-category" name="category">
+                    <option value="" selected>Todas as categorias</option>
+                    <option value="livros">Livros</option>
+                    <option value="cadernos">Cadernos</option>
+                    <option value="mochilas">Mochilas</option>
+                    <option value="material-escrita">Material de escrita</option>
+                    <option value="artes">Artes</option>
+                </select>
+
+                <label for="filter-condition">Estado de conservação</label>
+                <select id="filter-condition" name="condition">
+                    <option value="" selected>Todos os estados</option>
+                    <option value="novo">Novo</option>
+                    <option value="seminovo">Seminovo</option>
+                    <option value="usado">Usado</option>
+                </select>
+
+                <button type="submit">Filtrar</button>
+            </form>
+
+            <article>
+                <figure>
+                    <img src="../img/item-image-1.jpg" alt="Kit de Lápis de Cor 48 unidades">
+                    <figcaption>Artes</figcaption>
+                </figure>
+
+                <small>Usado</small>
+
+                <h3>Kit de Lápis de Cor 48un.</h3>
+
                 <ul>
-                    <li><a href="../index.html">Início</a></li>
-                    <li><a href="./sobre-o-projeto.html">Sobre</a></li>
-                    <li><a href="./como-participar.html">Como participar</a></li>
-                    <li><a href="./catalogo.html">Catálogo</a></li>
-                    <li><a href="./contato.html">Contato</a></li>
+                    <li>📍 Fortaleza, CE</li>
+                    <li>👤 Doado por M. Oliveira</li>
                 </ul>
-                <button>Entrar</button>
-                <button>Cadastre-se</button>
-            </nav>
-        </header>
 
-        <main>
-            <section id="catalog-section">
-                <h1>Catálogo de materiais</h1>
-                <p>Explore os materiais escolares disponíveis para doação. Use os filtros para encontrar o que você
-                    precisa por categoria ou estado de conservação.</p>
+                <button type="button">Tenho Interesse</button>
+            </article>
 
-                <form id="catalog-filters">
-                    <label for="filter-category">Categoria</label>
-                    <select id="filter-category" name="category">
-                        <option value="" selected>Todas as categorias</option>
-                        <option value="livros">Livros</option>
-                        <option value="cadernos">Cadernos</option>
-                        <option value="mochilas">Mochilas</option>
-                        <option value="material-escrita">Material de escrita</option>
-                        <option value="artes">Artes</option>
-                    </select>
+            <article>
+                <figure>
+                    <img src="../img/item-image-2.jpg" alt="Mochila Escolar Reforçada">
+                    <figcaption>Mochilas</figcaption>
+                </figure>
 
-                    <label for="filter-condition">Estado de conservação</label>
-                    <select id="filter-condition" name="condition">
-                        <option value="" selected>Todos os estados</option>
-                        <option value="novo">Novo</option>
-                        <option value="seminovo">Seminovo</option>
-                        <option value="usado">Usado</option>
-                    </select>
+                <small>Seminovo</small>
 
-                    <button type="submit">Filtrar</button>
-                </form>
+                <h3>Mochila Escolar Reforçada</h3>
 
-                <article>
-                    <figure>
-                        <img src="../img/item-image-1.jpg" alt="Kit de Lápis de Cor 48 unidades">
-                        <figcaption>Artes</figcaption>
-                    </figure>
+                <ul>
+                    <li>📍 Caucaia, CE</li>
+                    <li>👤 Doado por R. Bezerra</li>
+                </ul>
 
-                    <small>Usado</small>
+                <button type="button">Tenho Interesse</button>
+            </article>
 
-                    <h3>Kit de Lápis de Cor 48un.</h3>
+            <article>
+                <figure>
+                    <img src="../img/item-image-3.jpg" alt="Coleção de Livros Didáticos">
+                    <figcaption>Livros</figcaption>
+                </figure>
 
-                    <ul>
-                        <li>📍 Fortaleza, CE</li>
-                        <li>👤 Doado por M. Oliveira</li>
-                    </ul>
+                <small>Novo</small>
 
-                    <button type="button">Tenho Interesse</button>
-                </article>
+                <h3>Coleção de Livros Didáticos</h3>
 
-                <article>
-                    <figure>
-                        <img src="../img/item-image-2.jpg" alt="Mochila Escolar Reforçada">
-                        <figcaption>Mochilas</figcaption>
-                    </figure>
+                <ul>
+                    <li>📍 Fortaleza, CE</li>
+                    <li>👤 Doado por S. Ferreira</li>
+                </ul>
 
-                    <small>Seminovo</small>
+                <button type="button">Tenho Interesse</button>
+            </article>
+        </section>
+    </main>
 
-                    <h3>Mochila Escolar Reforçada</h3>
-
-                    <ul>
-                        <li>📍 Caucaia, CE</li>
-                        <li>👤 Doado por R. Bezerra</li>
-                    </ul>
-
-                    <button type="button">Tenho Interesse</button>
-                </article>
-
-                <article>
-                    <figure>
-                        <img src="../img/item-image-3.jpg" alt="Coleção de Livros Didáticos">
-                        <figcaption>Livros</figcaption>
-                    </figure>
-
-                    <small>Novo</small>
-
-                    <h3>Coleção de Livros Didáticos</h3>
-
-                    <ul>
-                        <li>📍 Fortaleza, CE</li>
-                        <li>👤 Doado por S. Ferreira</li>
-                    </ul>
-
-                    <button type="button">Tenho Interesse</button>
-                </article>
-            </section>
-        </main>
-
-        <footer>
-            © 2026 PassaAdiante - Todos os direitos reservados
-        </footer>
-    </body>
+    <footer>
+        © 2026 PassaAdiante - Todos os direitos reservados
+    </footer>
+</body>
 
 </html>

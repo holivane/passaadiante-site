@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/style.css">
-        <script src="./js/script.js"></script>
-        <title>Passa Adiante</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <title>Passa Adiante</title>
+</head>
 
-    <body>
-        <header>
-            <nav>
+<body>
+    <header class="header">
+        <nav class="menu">
+            <div class="menu__logo">
                 <img src="./img/logo.svg" alt="Passa Adiante Logo">
-                <ul>
-                    <li><a href="#hero-section">Início</a></li>
-                    <li><a href="./paginas/sobre-o-projeto.html">Sobre</a></li>
-                    <li><a href="./paginas/como-participar.html">Como participar</a></li>
-                    <li><a href="./paginas/catalogo.html">Catálogo</a></li>
-                    <li><a href="./paginas/contato.html">Contato</a></li>
-                </ul>
-                <button>Entrar</button>
-                <button>Cadastre-se</button>
-            </nav>
-        </header>
+            </div>
 
-        <main>
-            <section id="hero-section">
-                <h1>Seu material ainda tem muito a ensinar!</h1>
-                <p>Conectamos doadores de materiais escolares a estudantes que precisam, democratizando o acesso à educação
-                    e reduzindo o desperdício, um item de cada vez.</p>
-                <img src="./img/hero-section.png" alt="Passa Adiante Hero Section">
-            </section>
-        </main>
+            <ul class="menu__list">
+                <li class="menu__item menu__item--active"><a href="#hero-section" class="menu__link">Início</a></li>
+                <li class="menu__item"><a href="./paginas/sobre-o-projeto.html" class="menu__link">Sobre</a></li>
+                <li class="menu__item"><a href="./paginas/como-participar.html" class="menu__link">Como participar</a></li>
+                <li class="menu__item"><a href="./paginas/catalogo.html" class="menu__link">Catálogo</a></li>
+                <li class="menu__item"><a href="./paginas/contato.html" class="menu__link">Contato</a></li>
+            </ul>
 
-        <footer>
-            © 2026 PassaAdiante - Todos os direitos reservados
-        </footer>
-    </body>
+            <div class="menu__actions">
+                <button class="btn btn--primary">Entrar</button>
+                <button class="btn btn--secondary">Cadastre-se</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero-section">
+            <h1>Seu material ainda tem muito a ensinar!</h1>
+            <p>Conectamos doadores de materiais escolares a estudantes que precisam, democratizando o acesso à educação
+                e reduzindo o desperdício, um item de cada vez.</p>
+            <img src="./img/hero-section.png" alt="Passa Adiante Hero Section">
+        </section>
+    </main>
+
+    <footer>
+        © 2026 PassaAdiante - Todos os direitos reservados
+    </footer>
+</body>
 
 </html>
