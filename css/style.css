@@ -21,6 +21,15 @@
     font-family: 'Inter', sans-serif;
 }
 
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     min-height: 100vh;
     display: flex;
