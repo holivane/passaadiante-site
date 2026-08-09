@@ -1,0 +1,98 @@
+:root {
+    --padding-base-layout-x: 2rem;
+    --color-primary: #1e6b5c;
+    --color-primary-hover: #154c41;
+    --color-base-text-secondary: #6C757D;
+    --color-bg-primary: #F7F4EE;
+    --color-bg-secondary: #FCFBF6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* MENU */
+.menu {
+    background-color: var(--color-bg-secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem var(--padding-base-layout-x);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.menu__list {
+    display: flex;
+    gap: 2rem;
+    text-decoration: none;
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+.menu__list a {
+    text-decoration: none;
+    white-space: nowrap;
+    color: var(--color-base-text-secondary);
+}
+
+.menu__item a:hover,
+.menu__item a:focus, 
+.menu__item--active a {
+    color: var(--color-primary);
+}
+
+.menu__logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu__logo img {
+    height: 2.5rem;
+    width: auto;
+    object-fit: contain;
+}
+
+/* BOTÃO PADRÃO */
+.btn {
+    font-family: var(--font-primary);
+    font-size: 0.8rem; 
+    font-weight: 600;
+    height: 2.5rem; 
+    padding: 0 1.1rem; 
+    border-radius: 6px; 
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* BOTÃO PRINCIPAL */
+.btn--primary {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    border: 1px solid transparent;
+}
+
+.btn--primary:hover {
+    background-color: var(--color-primary-hover);
+}
+
+/* BOTÃO SECUNDÁRIO */
+.btn--secondary {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 1.5px solid var(--color-primary);
+}
+
+.btn--secondary:hover {
+    background-color: rgba(30, 107, 92, 0.08);
+}
