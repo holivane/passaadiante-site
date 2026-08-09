@@ -31,16 +31,6 @@ main {
     padding-top: 5.5rem;
 }
 
-footer {
-    flex-shrink: 0;
-    padding-block: 1rem;
-    background-color: var(--color-bg-secondary);
-    text-align: center;
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: var(--color-base-text-secondary);
-}
-
 /* MENU */
 .menu {
     background-color: var(--color-bg-secondary);
@@ -162,4 +152,14 @@ footer {
 .stats-section__list li:not(:first-child)::before {
     content: "•";
     margin-right: 1rem;
+}
+
+footer {
+    flex-shrink: 0;
+    padding-block: 1rem;
+    background-color: var(--color-bg-secondary);
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--color-base-text-secondary);
 }
