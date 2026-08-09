@@ -8,6 +8,7 @@
     --color-bg-stats: #1B6B5A;
     --color-text-logo: #1B6B5A;
     --color-text-stats: #C3DCDA;
+    --color-text-highlight: #1B5B5A;
 }
 
 * {
@@ -126,10 +127,21 @@ main {
     justify-content: center;
 }
 
+#hero-section h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.4;
+}
+
+#hero-section h1 span {
+    color: var(--color-text-highlight);
+}
+
 #hero-section img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 1.25rem;
 }
 
 #stats-section {
