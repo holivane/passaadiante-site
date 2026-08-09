@@ -9,6 +9,8 @@
     --color-text-logo: #1B6B5A;
     --color-text-stats: #C3DCDA;
     --color-text-highlight: #1B5B5A;
+    --color-bg-badge: #F0E4D3;
+    --color-badge-dot: #E8A33D;
 }
 
 * {
@@ -124,7 +126,30 @@ main {
 #hero-section > div:first-child {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: fit-content;
+    background-color: var(--color-bg-badge);
+    color: var(--color-primary);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.5rem 1rem;
+    border-radius: 6.25rem;
+}
+
+.hero-badge::before {
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--color-badge-dot);
 }
 
 #hero-section h1 {
