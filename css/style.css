@@ -11,6 +11,7 @@
     --color-text-highlight: #1B5B5A;
     --color-bg-badge: #F0E4D3;
     --color-badge-dot: #E8A33D;
+    --color-text-primary: #1A1A2E;
 }
 
 * {
@@ -153,6 +154,7 @@ main {
 }
 
 #hero-section h1 {
+    max-width: 49.70rem;
     font-weight: 700;
     font-size: 4rem;
     line-height: 1.4;
@@ -160,6 +162,14 @@ main {
 
 #hero-section h1 span {
     color: var(--color-text-highlight);
+}
+
+#hero-section p {
+    max-width: 45.25rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: var(--color-text-primary);
 }
 
 #hero-section img {
