@@ -109,6 +109,21 @@ h1 {
     gap: 1rem;
 }
 
+.menu__mobile,
+.menu__list-mobile{
+    display: none;
+}
+
+.menu__close {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--color-primary);
+    align-self: flex-end;
+    cursor: pointer;
+}
+
 /* BOTÃO PADRÃO */
 .btn {
     font-size: 0.8rem;
@@ -671,4 +686,84 @@ footer {
     font-size: 0.8rem;
     font-weight: 500;
     color: var(--color-text-footer);
+}
+
+/* MENU MOBILE */
+@media (max-width: 768px) {
+    .menu__list,
+    .menu__actions {
+        display: none;
+    }
+
+    .menu__mobile {
+        background-color: #FFFFFF;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        border: 1px solid #CED4DA;
+        cursor: pointer;
+    }
+
+    .menu__close {
+        display: block;
+    }
+
+    .menu__list-mobile {
+        display: flex;
+        flex-direction: column;
+        width: 18rem;
+        max-width: 80vw;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1100;
+        background-color: var(--color-bg-secondary);
+        padding: 1.5rem;
+        gap: 1.25rem;
+        list-style: none;
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .menu__list-mobile--open {
+        transform: translateX(0);
+    }
+
+    .menu__list-mobile .menu__link {
+        text-decoration: none;
+        font-size: 1rem;
+        color: var(--color-base-text-secondary);
+        display: block;
+        padding: 0.5rem 0;
+    }
+
+    .menu__list-mobile .menu__item--active .menu__link,
+    .menu__list-mobile .menu__link:hover {
+        color: var(--color-primary);
+        font-weight: 600;
+    }
+
+    .menu__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1050;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    
+    .menu__overlay--open {
+        opacity: 1;
+        visibility: visible;
+    }
+    
 }
