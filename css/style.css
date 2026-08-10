@@ -322,6 +322,44 @@ h1 {
     color: var(--color-text-card);
 }
 
+#team-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-inline: 2rem;
+    padding-block: 2rem;
+    text-align: center;
+}
+
+#team-section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+}
+
+#team-section p {
+    max-width: 38.20rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-text-card);
+}
+
+.team-section__list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.team-section__list li:not(:first-child)::before {
+    content: "•";
+    margin-right: 1rem;
+    color: var(--color-text-card);
+}
+
 footer {
     flex-shrink: 0;
     padding-block: 1rem;
