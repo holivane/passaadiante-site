@@ -13,7 +13,7 @@
     <header class="header">
         <nav class="menu">
             <div class="menu__logo">
-                <img src="../img/logo.svg" alt="Passa Adiante Logo">
+                <p>PassaAdiante</p>
             </div>
 
             <ul class="menu__list">
@@ -33,85 +33,100 @@
 
     <main>
         <section id="catalog-section">
-            <h1>Catálogo de materiais</h1>
-            <p>Explore os materiais escolares disponíveis para doação. Use os filtros para encontrar o que você
-                precisa por categoria ou estado de conservação.</p>
+            <h1 class="page-title">Catálogo de materiais</h1>
+            <div class="catalog-intro">
+                <p>Explore os materiais escolares disponíveis para doação. Use os filtros para encontrar o que você
+                    precisa por categoria ou estado de conservação.</p>
 
-            <form id="catalog-filters">
-                <label for="filter-category">Categoria</label>
-                <select id="filter-category" name="category">
-                    <option value="" selected>Todas as categorias</option>
-                    <option value="livros">Livros</option>
-                    <option value="cadernos">Cadernos</option>
-                    <option value="mochilas">Mochilas</option>
-                    <option value="material-escrita">Material de escrita</option>
-                    <option value="artes">Artes</option>
-                </select>
+                <form id="catalog-filters">
+                    <div class="catalog-filters__field">
+                        <label for="filter-category">Categoria</label>
+                        <select id="filter-category" name="category">
+                            <option value="" selected>Todas as categorias</option>
+                            <option value="livros">Livros</option>
+                            <option value="cadernos">Cadernos</option>
+                            <option value="mochilas">Mochilas</option>
+                            <option value="material-escrita">Material de escrita</option>
+                            <option value="artes">Artes</option>
+                        </select>
+                    </div>
+    
+                    <div class="catalog-filters__field">
+                        <label for="filter-condition">Estado de conservação</label>
+                        <select id="filter-condition" name="condition">
+                            <option value="" selected>Todos os estados</option>
+                            <option value="novo">Novo</option>
+                            <option value="seminovo">Seminovo</option>
+                            <option value="usado">Usado</option>
+                        </select>
+                    </div>
+    
+                    <button type="submit">Filtrar</button>
+                </form>
+            </div>
 
-                <label for="filter-condition">Estado de conservação</label>
-                <select id="filter-condition" name="condition">
-                    <option value="" selected>Todos os estados</option>
-                    <option value="novo">Novo</option>
-                    <option value="seminovo">Seminovo</option>
-                    <option value="usado">Usado</option>
-                </select>
 
-                <button type="submit">Filtrar</button>
-            </form>
+            <div class="catalog-grid">
+                <article class="catalog-card">
+                    <figure class="catalog-card__figure">
+                        <img class="catalog-card__image" src="../img/item-image-1.jpg" alt="Kit de Lápis de Cor 48 unidades">
+                        <figcaption class="catalog-card__category">Artes</figcaption>
+                    </figure>
 
-            <article>
-                <figure>
-                    <img src="../img/item-image-1.jpg" alt="Kit de Lápis de Cor 48 unidades">
-                    <figcaption>Artes</figcaption>
-                </figure>
+                    <div class="catalog-card__body">
+                        <small class="catalog-card__condition catalog-card__condition--usado">Usado</small>
 
-                <small>Usado</small>
+                        <h3 class="catalog-card__title">Kit de Lápis de Cor 48un.</h3>
 
-                <h3>Kit de Lápis de Cor 48un.</h3>
+                        <ul class="catalog-card__meta">
+                            <li>📍 Fortaleza, CE</li>
+                            <li>👤 Doado por M. Oliveira</li>
+                        </ul>
 
-                <ul>
-                    <li>📍 Fortaleza, CE</li>
-                    <li>👤 Doado por M. Oliveira</li>
-                </ul>
+                        <button type="button" class="btn btn--primary catalog-card__cta">Tenho Interesse</button>
+                    </div>
+                </article>
 
-                <button type="button">Tenho Interesse</button>
-            </article>
+                <article class="catalog-card">
+                    <figure class="catalog-card__figure">
+                        <img class="catalog-card__image" src="../img/item-image-2.jpg" alt="Mochila Escolar Reforçada">
+                        <figcaption class="catalog-card__category">Mochilas</figcaption>
+                    </figure>
 
-            <article>
-                <figure>
-                    <img src="../img/item-image-2.jpg" alt="Mochila Escolar Reforçada">
-                    <figcaption>Mochilas</figcaption>
-                </figure>
+                    <div class="catalog-card__body">
+                        <small class="catalog-card__condition catalog-card__condition--seminovo">Seminovo</small>
 
-                <small>Seminovo</small>
+                        <h3 class="catalog-card__title">Mochila Escolar Reforçada</h3>
 
-                <h3>Mochila Escolar Reforçada</h3>
+                        <ul class="catalog-card__meta">
+                            <li>📍 Caucaia, CE</li>
+                            <li>👤 Doado por R. Bezerra</li>
+                        </ul>
 
-                <ul>
-                    <li>📍 Caucaia, CE</li>
-                    <li>👤 Doado por R. Bezerra</li>
-                </ul>
+                        <button type="button" class="btn btn--primary catalog-card__cta">Tenho Interesse</button>
+                    </div>
+                </article>
 
-                <button type="button">Tenho Interesse</button>
-            </article>
+                <article class="catalog-card">
+                    <figure class="catalog-card__figure">
+                        <img class="catalog-card__image" src="../img/item-image-3.jpg" alt="Coleção de Livros Didáticos">
+                        <figcaption class="catalog-card__category">Livros</figcaption>
+                    </figure>
 
-            <article>
-                <figure>
-                    <img src="../img/item-image-3.jpg" alt="Coleção de Livros Didáticos">
-                    <figcaption>Livros</figcaption>
-                </figure>
+                    <div class="catalog-card__body">
+                        <small class="catalog-card__condition catalog-card__condition--novo">Novo</small>
 
-                <small>Novo</small>
+                        <h3 class="catalog-card__title">Coleção de Livros Didáticos</h3>
 
-                <h3>Coleção de Livros Didáticos</h3>
+                        <ul class="catalog-card__meta">
+                            <li>📍 Fortaleza, CE</li>
+                            <li>👤 Doado por S. Ferreira</li>
+                        </ul>
 
-                <ul>
-                    <li>📍 Fortaleza, CE</li>
-                    <li>👤 Doado por S. Ferreira</li>
-                </ul>
-
-                <button type="button">Tenho Interesse</button>
-            </article>
+                        <button type="button" class="btn btn--primary catalog-card__cta">Tenho Interesse</button>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
 
