@@ -38,23 +38,27 @@
                 precisa por categoria ou estado de conservação.</p>
 
             <form id="catalog-filters">
-                <label for="filter-category">Categoria</label>
-                <select id="filter-category" name="category">
-                    <option value="" selected>Todas as categorias</option>
-                    <option value="livros">Livros</option>
-                    <option value="cadernos">Cadernos</option>
-                    <option value="mochilas">Mochilas</option>
-                    <option value="material-escrita">Material de escrita</option>
-                    <option value="artes">Artes</option>
-                </select>
+                <div class="catalog-filters__field">
+                    <label for="filter-category">Categoria</label>
+                    <select id="filter-category" name="category">
+                        <option value="" selected>Todas as categorias</option>
+                        <option value="livros">Livros</option>
+                        <option value="cadernos">Cadernos</option>
+                        <option value="mochilas">Mochilas</option>
+                        <option value="material-escrita">Material de escrita</option>
+                        <option value="artes">Artes</option>
+                    </select>
+                </div>
 
-                <label for="filter-condition">Estado de conservação</label>
-                <select id="filter-condition" name="condition">
-                    <option value="" selected>Todos os estados</option>
-                    <option value="novo">Novo</option>
-                    <option value="seminovo">Seminovo</option>
-                    <option value="usado">Usado</option>
-                </select>
+                <div class="catalog-filters__field">
+                    <label for="filter-condition">Estado de conservação</label>
+                    <select id="filter-condition" name="condition">
+                        <option value="" selected>Todos os estados</option>
+                        <option value="novo">Novo</option>
+                        <option value="seminovo">Seminovo</option>
+                        <option value="usado">Usado</option>
+                    </select>
+                </div>
 
                 <button type="submit">Filtrar</button>
             </form>
