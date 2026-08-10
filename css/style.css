@@ -390,7 +390,7 @@ h1 {
     justify-content: space-between;
     max-width: 38.90rem;
     max-height: 45.40rem;
-    padding-inline: 2.85rem;
+    padding: 2.85rem;
     border-radius: 0.95rem;
     background-color: #FFFFFF;
     border: 1px solid var(--color-bg-card);
@@ -401,11 +401,25 @@ h1 {
     flex-direction: column;
 }
 
+.participate-card__content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+}
+
+.participate-card__content > p {
+    font-size: 1rem;
+    line-height: 1.875;
+    color: var(--color-text-card);
+}
+
 .participate-card__cta {
     display: block;
     width: 100%;
     text-align: center;
     text-decoration: none;
+    font-size: 1.25rem;
+    line-height: 1.4;
     padding: 0.65rem;
     border-radius: 0.65rem;
 }
@@ -413,6 +427,13 @@ h1 {
 .participate-card__cta--primary {
     background-color: var(--color-bg-stats);
     color: #FFFFFF;
+    border: 1px solid transparent;
+}
+
+.participate-card__cta--secondary {
+    background-color: transparent;
+    border: 1px solid var(--color-heading-label);
+    color: var(--color-heading-label);
 }
 
 footer {
