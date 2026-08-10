@@ -13,13 +13,35 @@
     <header class="header">
         <nav class="menu">
             <div class="menu__logo">
-                <img src="./img/logo.svg" alt="Passa Adiante Logo">
+                <p>PassaAdiante</p>
             </div>
+
+            <button class="menu__mobile" aria-label="Abrir menu">
+                <img src="./img/menu-icon.png" alt="Ícone Menu Mobile">
+            </button>
+    
+            <div class="menu__overlay"></div>
+    
+            <ul class="menu__list-mobile">
+                <button class="menu__close" aria-label="Fechar menu">&times;</button>
+    
+                <li class="menu__item menu__item--active"><a href="#hero-section" class="menu__link">Início</a></li>
+                <li class="menu__item"><a href="./paginas/sobre-o-projeto.html" class="menu__link">Sobre</a></li>
+                <li class="menu__item"><a href="./paginas/como-participar.html" class="menu__link">Como participar</a></li>
+                <li class="menu__item"><a href="./paginas/catalogo.html" class="menu__link">Catálogo</a></li>
+                <li class="menu__item"><a href="./paginas/contato.html" class="menu__link">Contato</a></li>
+
+                <div class="menu__mobile-actions">
+                    <button class="btn btn--primary">Entrar</button>
+                    <button class="btn btn--secondary">Cadastre-se</button>
+                </div>
+            </ul>
 
             <ul class="menu__list">
                 <li class="menu__item menu__item--active"><a href="#hero-section" class="menu__link">Início</a></li>
                 <li class="menu__item"><a href="./paginas/sobre-o-projeto.html" class="menu__link">Sobre</a></li>
-                <li class="menu__item"><a href="./paginas/como-participar.html" class="menu__link">Como participar</a></li>
+                <li class="menu__item"><a href="./paginas/como-participar.html" class="menu__link">Como participar</a>
+                </li>
                 <li class="menu__item"><a href="./paginas/catalogo.html" class="menu__link">Catálogo</a></li>
                 <li class="menu__item"><a href="./paginas/contato.html" class="menu__link">Contato</a></li>
             </ul>
