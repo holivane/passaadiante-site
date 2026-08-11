@@ -25,6 +25,12 @@
     font-family: 'Inter', sans-serif;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 html {
     scrollbar-width: none;
     -ms-overflow-style: none;
