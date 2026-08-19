@@ -106,6 +106,7 @@ h1 {
     color: var(--color-bg-stats);
     font-size: 1.25rem;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .menu__actions {
