@@ -2,6 +2,7 @@
     --padding-base-layout-x: 3.125rem;
     --color-primary: #1E6B5C;
     --color-primary-hover: #154C41;
+    --color-white: #FFFFFF;
     --color-base-text-secondary: #6C757D;
     --color-bg-primary: #F7F4EE;
     --color-bg-secondary: #FCFBF6;
@@ -147,7 +148,7 @@ h1 {
 /* BOTÃO PRINCIPAL */
 .btn--primary {
     background-color: var(--color-primary);
-    color: #FFFFFF;
+    color: var(--color-white);
     border: 1px solid transparent;
 }
 
@@ -168,7 +169,7 @@ h1 {
 
 .card-surface {
     border-radius: 0.95rem;
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     border: 1px solid var(--color-bg-card);
 }
 
@@ -460,7 +461,7 @@ h1 {
     height: 3.65rem;
     flex-shrink: 0;
     border-radius: 50%;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 
 .participate-card__steps--primary li::before {
@@ -490,7 +491,7 @@ h1 {
 
 .participate-card__cta--primary {
     background-color: var(--color-bg-stats);
-    color: #FFFFFF;
+    color: var(--color-white);
     border: 1px solid transparent;
 }
 
@@ -545,7 +546,7 @@ h1 {
     padding: 0.65rem 0.85rem;
     border-radius: 0.5rem;
     border: 1px solid var(--color-bg-card);
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     font-size: 0.875rem;
     color: var(--color-text-primary);
 }
@@ -644,7 +645,7 @@ h1 {
     padding: 0.5rem;
     border: 1px solid var(--color-bg-card);
     border-radius: 0.5rem;
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     text-align: left;
     font-size: 0.9rem;
     color: var(--color-text-primary);
@@ -659,7 +660,7 @@ h1 {
     right: 0;
     z-index: 10;
     list-style: none;
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     border: 1px solid var(--color-bg-card);
     border-radius: 0.5rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -840,7 +841,7 @@ footer {
     }
 
     .menu__mobile {
-        background-color: #FFFFFF;
+        background-color: var(--color-white);
         width: 2.5rem;
         height: 2.5rem;
         display: flex;
