@@ -64,24 +64,44 @@
                 <form id="catalog-filters">
                     <div class="catalog-filters__field">
                         <label for="filter-category">Categoria</label>
-                        <select id="filter-category" name="category">
-                            <option value="" selected>Todas as categorias</option>
-                            <option value="livros">Livros</option>
-                            <option value="cadernos">Cadernos</option>
-                            <option value="mochilas">Mochilas</option>
-                            <option value="material-escrita">Material de escrita</option>
-                            <option value="artes">Artes</option>
-                        </select>
+                        <div class="select-custom">
+                            <select id="filter-category" name="category">
+                                <option value="" selected>Todas as categorias</option>
+                                <option value="livros">Livros</option>
+                                <option value="cadernos">Cadernos</option>
+                                <option value="mochilas">Mochilas</option>
+                                <option value="material-escrita">Material de escrita</option>
+                                <option value="artes">Artes</option>
+                            </select>
+                            <button type="button" class="select-custom__trigger">Todas as categorias</button>
+                            <ul class="select-custom__options">
+                                <li data-value="">Todas as categorias</li>
+                                <li data-value="livros">Livros</li>
+                                <li data-value="cadernos">Cadernos</li>
+                                <li data-value="mochilas">Mochilas</li>
+                                <li data-value="material-escrita">Material de escrita</li>
+                                <li data-value="artes">Artes</li>
+                            </ul>
+                        </div>
                     </div>
-    
+
                     <div class="catalog-filters__field">
                         <label for="filter-condition">Estado de conservação</label>
-                        <select id="filter-condition" name="condition">
-                            <option value="" selected>Todos os estados</option>
-                            <option value="novo">Novo</option>
-                            <option value="seminovo">Seminovo</option>
-                            <option value="usado">Usado</option>
-                        </select>
+                        <div class="select-custom">
+                            <select id="filter-condition" name="condition">
+                                <option value="" selected>Todos os estados</option>
+                                <option value="novo">Novo</option>
+                                <option value="seminovo">Seminovo</option>
+                                <option value="usado">Usado</option>
+                            </select>
+                            <button type="button" class="select-custom__trigger">Todos os estados</button>
+                            <ul class="select-custom__options">
+                                <li data-value="">Todos os estados</li>
+                                <li data-value="novo">Novo</li>
+                                <li data-value="seminovo">Seminovo</li>
+                                <li data-value="usado">Usado</li>
+                            </ul>
+                        </div>
                     </div>
     
                     <button type="submit" class="btn btn--primary">Filtrar</button>
