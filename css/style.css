@@ -7,11 +7,8 @@
     --color-bg-primary: #F7F4EE;
     --color-bg-secondary: #FCFBF6;
     --color-bg-stats: #1B6B5A;
-    --color-text-logo: #1B6B5A;
     --color-text-stats: #C3DCDA;
-    --color-text-highlight: #1B5B5A;
     --color-bg-badge: #F0E4D3;
-    --color-badge-dot: #E8A33D;
     --color-text-primary: #1A1A2E;
     --color-heading-label: #E8A43B;
     --color-bg-card: #EDE8DF;
@@ -106,7 +103,7 @@ h1 {
 .menu__logo {
     display: flex;
     align-items: center;
-    color: var(--color-text-logo);
+    color: var(--color-bg-stats);
     font-size: 1.25rem;
     font-weight: 600;
 }
@@ -218,7 +215,7 @@ h1 {
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
-    background-color: var(--color-badge-dot);
+    background-color: var(--color-heading-label);
 }
 
 #hero-section h1 {
@@ -231,7 +228,7 @@ h1 {
 }
 
 #hero-section h1 span {
-    color: var(--color-text-highlight);
+    color: var(--color-bg-stats);
 }
 
 #hero-section p {
