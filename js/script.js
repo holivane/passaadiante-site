@@ -31,4 +31,45 @@ document.addEventListener('DOMContentLoaded', () => {
             $('#no-results').toggle($('.catalog-card:visible').length === 0);
         });
     }
+
+    if ($('#contact-form').length) {
+        
+        $('#email').on('input', function() {
+            $(this).val($(this).val().replace(/\s+/g, ''));
+        });
+
+        $('#contact-form').on('submit', function(e) {
+            e.preventDefault();
+
+            const nome = $('#nome').val().trim();
+            const email = $('#email').val().trim();
+            const mensagem = $('#mensagem').val().trim();
+            const $feedback = $('#form-feedback');
+
+            $feedback.removeClass('form-feedback--error form-feedback--success');
+
+            if (nome === '' || email === '' || mensagem === '') {
+                $feedback.text('Por favor, preencha todos os campos obrigatórios.');
+                $feedback.addClass('form-feedback--error');
+                return;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                $feedback.text('Por favor, insira um e-mail válido.');
+                $feedback.addClass('form-feedback--error');
+                return;
+            }
+
+            $feedback.text('Mensagem enviada com sucesso!');
+            $feedback.addClass('form-feedback--success');
+            
+            this.reset();
+
+            setTimeout(function() {
+                $feedback.text('');
+                $feedback.removeClass('form-feedback--success');
+            }, 4000);
+        });
+    }
 });
