@@ -31,4 +31,52 @@ document.addEventListener('DOMContentLoaded', () => {
             $('#no-results').toggle($('.catalog-card:visible').length === 0);
         });
     }
+
+    // Validação do Formulário de Contato
+    if ($('#contact-form').length) {
+        
+        // Opcional: Impede o usuário de digitar espaços no campo de e-mail em tempo real
+        $('#email').on('input', function() {
+            $(this).val($(this).val().replace(/\s+/g, ''));
+        });
+
+        $('#contact-form').on('submit', function(e) {
+            e.preventDefault();
+
+            const nome = $('#nome').val().trim();
+            const email = $('#email').val().trim();
+            const mensagem = $('#mensagem').val().trim();
+            const $feedback = $('#form-feedback');
+
+            // Limpa feedbacks anteriores
+            $feedback.removeClass('form-feedback--error form-feedback--success');
+
+            // Valida campos obrigatórios
+            if (nome === '' || email === '' || mensagem === '') {
+                $feedback.text('Por favor, preencha todos os campos obrigatórios.');
+                $feedback.addClass('form-feedback--error');
+                return;
+            }
+
+            // Valida formato do e-mail
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                $feedback.text('Por favor, insira um e-mail válido (sem espaços).');
+                $feedback.addClass('form-feedback--error');
+                return;
+            }
+
+            // Sucesso
+            $feedback.text('Mensagem enviada com sucesso!');
+            $feedback.addClass('form-feedback--success');
+            
+            this.reset();
+
+            // Remove o feedback de sucesso após 4 segundos
+            setTimeout(function() {
+                $feedback.text('');
+                $feedback.removeClass('form-feedback--success');
+            }, 4000);
+        });
+    }
 });
