@@ -1,116 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/style.css">
-        <script src="../js/script.js" defer></script>
-        <title>Contato | Passa Adiante</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+    <title>Contato | Passa Adiante</title>
+</head>
 
-    <body>
-        <header class="header">
-            <nav class="menu">
-                <div class="menu__logo">
-                    <p>PassaAdiante</p>
-                </div>
+<body>
+    <header class="header">
+        <nav class="menu">
+            <div class="menu__logo">
+                <p>PassaAdiante</p>
+            </div>
 
-                <button class="menu__mobile" aria-label="Abrir menu">
-                    <img src="./../img/menu-icon.png" alt="Ícone Menu Mobile">
-                </button>
-        
-                <div class="menu__overlay"></div>
-        
-                <ul class="menu__list-mobile">
-                    <button class="menu__close" aria-label="Fechar menu">&times;</button>
-        
-                    <li class="menu__item"><a href="../index.html" class="menu__link">Início</a></li>
-                    <li class="menu__item"><a href="./sobre-o-projeto.html" class="menu__link">Sobre</a></li>
-                    <li class="menu__item"><a href="./como-participar.html" class="menu__link">Como participar</a></li>
-                    <li class="menu__item"><a href="./catalogo.html" class="menu__link">Catálogo</a></li>
-                    <li class="menu__item menu__item--active"><a href="./contato.html" class="menu__link">Contato</a></li>
-                
-                    <div class="menu__mobile-actions">
-                        <button class="btn btn--primary">Entrar</button>
-                        <button class="btn btn--secondary">Cadastre-se</button>
-                    </div>
-                </ul>
-    
-                <ul class="menu__list">
-                    <li class="menu__item"><a href="../index.html" class="menu__link">Início</a></li>
-                    <li class="menu__item"><a href="./sobre-o-projeto.html" class="menu__link">Sobre</a></li>
-                    <li class="menu__item"><a href="./como-participar.html" class="menu__link">Como participar</a></li>
-                    <li class="menu__item"><a href="./catalogo.html" class="menu__link">Catálogo</a></li>
-                    <li class="menu__item menu__item--active"><a href="./contato.html" class="menu__link">Contato</a></li>
-                </ul>
-    
-                <div class="menu__actions">
+            <button class="menu__mobile" aria-label="Abrir menu">
+                <img src="./../img/menu-icon.png" alt="Ícone Menu Mobile">
+            </button>
+
+            <div class="menu__overlay"></div>
+
+            <ul class="menu__list-mobile">
+                <button class="menu__close" aria-label="Fechar menu">&times;</button>
+
+                <li class="menu__item"><a href="../index.html" class="menu__link">Início</a></li>
+                <li class="menu__item"><a href="./sobre-o-projeto.html" class="menu__link">Sobre</a></li>
+                <li class="menu__item"><a href="./como-participar.html" class="menu__link">Como participar</a></li>
+                <li class="menu__item"><a href="./catalogo.html" class="menu__link">Catálogo</a></li>
+                <li class="menu__item menu__item--active"><a href="./contato.html" class="menu__link">Contato</a></li>
+
+                <div class="menu__mobile-actions">
                     <button class="btn btn--primary">Entrar</button>
                     <button class="btn btn--secondary">Cadastre-se</button>
                 </div>
-            </nav>
-        </header>
+            </ul>
 
-        <main>
-            <section id="contact-section">
-                <h1 class="page-title">Contato</h1>
-                <p>Entre em contato conosco preenchendo os dados abaixo e enviando sua mensagem.</p>
+            <ul class="menu__list">
+                <li class="menu__item"><a href="../index.html" class="menu__link">Início</a></li>
+                <li class="menu__item"><a href="./sobre-o-projeto.html" class="menu__link">Sobre</a></li>
+                <li class="menu__item"><a href="./como-participar.html" class="menu__link">Como participar</a></li>
+                <li class="menu__item"><a href="./catalogo.html" class="menu__link">Catálogo</a></li>
+                <li class="menu__item menu__item--active"><a href="./contato.html" class="menu__link">Contato</a></li>
+            </ul>
 
-                <form id="contact-form" action="#" method="POST">
+            <div class="menu__actions">
+                <button class="btn btn--primary">Entrar</button>
+                <button class="btn btn--secondary">Cadastre-se</button>
+            </div>
+        </nav>
+    </header>
 
-                    <div>
-                        <label for="nome">Nome</label>
-                        <input
-                            type="text"
-                            id="nome"
-                            name="nome"
-                            required
-                        >
-                    </div>
+    <main>
+        <section id="contact-section">
+            <h1 class="page-title">Contato</h1>
+            <p>Entre em contato conosco preenchendo os dados abaixo e enviando sua mensagem.</p>
 
-                    <div>
-                        <label for="email">E-mail</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            required
-                        >
-                    </div>
+            <form id="contact-form" action="#" method="POST">
 
-                    <div>
-                        <label for="assunto">Assunto</label>
-                        <input
-                            type="text"
-                            id="assunto"
-                            name="assunto"
-                        >
-                    </div>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        required
+                    >
+                </div>
 
-                    <div>
-                        <label for="mensagem">Mensagem</label>
-                        <textarea
-                            id="mensagem"
-                            name="mensagem"
-                            rows="6"
-                            required
-                        ></textarea>
-                    </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+                </div>
 
-                    <div id="form-feedback" class="form-feedback" role="status" aria-live="polite"></div>
+                <div>
+                    <label for="assunto">Assunto</label>
+                    <input
+                        type="text"
+                        id="assunto"
+                        name="assunto"
+                    >
+                </div>
 
-                    <button type="submit" class="btn btn--primary">
-                        Enviar
-                    </button>
+                <div>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="6"
+                        required
+                    ></textarea>
+                </div>
 
-                </form>
-            </section>
-        </main>
+                <div id="form-feedback" class="form-feedback" role="status" aria-live="polite"></div>
 
-        <footer>
-            © 2026 PassaAdiante - Todos os direitos reservados
-        </footer>
-    </body>
+                <button type="submit" class="btn btn--primary">
+                    Enviar
+                </button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        © 2026 PassaAdiante - Todos os direitos reservados
+    </footer>
+</body>
 
 </html>
