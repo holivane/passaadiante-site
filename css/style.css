@@ -627,20 +627,64 @@ h1 {
 }
 
 .catalog-filters__field select {
-    padding: 0.5rem;
-    border: 1px solid var(--color-bg-card);
-    border-radius: 0.5rem;
+    display: none;
 }
 
-#filter-category {
+.select-custom {
+    position: relative;
+}
+
+.catalog-filters__field:nth-child(1) .select-custom {
     width: 13.25rem;
 }
 
-#filter-condition {
+.catalog-filters__field:nth-child(2) .select-custom {
     width: 13.70rem;
 }
 
-#catalog-filters button {
+.select-custom__trigger {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--color-bg-card);
+    border-radius: 0.5rem;
+    background-color: #FFFFFF;
+    text-align: left;
+    font-size: 0.9rem;
+    color: var(--color-text-primary);
+    cursor: pointer;
+}
+
+.select-custom__options {
+    display: none;
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+    right: 0;
+    z-index: 10;
+    list-style: none;
+    background-color: #FFFFFF;
+    border: 1px solid var(--color-bg-card);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.select-custom__options--open {
+    display: block;
+}
+
+.select-custom__options li {
+    padding: 0.5rem 0.85rem;
+    font-size: 0.9rem;
+    color: var(--color-text-primary);
+    cursor: pointer;
+}
+
+.select-custom__options li:hover {
+    background-color: var(--color-bg-primary);
+}
+
+#catalog-filters>button {
     width: 12.5rem;
     height: 2.5rem;
     border-radius: 0.5rem;
@@ -781,8 +825,7 @@ footer {
     }
 
     #catalog-filters,
-    #filter-category,
-    #filter-condition,
+    .select-custom,
     #catalog-filters button,
     .catalog-filters__field {
         width: 100%;
@@ -913,8 +956,7 @@ footer {
     }
 
     #catalog-filters,
-    #filter-category,
-    #filter-condition,
+    .select-custom,
     #catalog-filters button,
     .catalog-filters__field {
         width: 100%;

@@ -32,6 +32,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    if ($('.select-custom').length) {
+        $('.select-custom').each(function () {
+            const wrapper = $(this);
+            const select = wrapper.find('select');
+            const trigger = wrapper.find('.select-custom__trigger');
+            const options = wrapper.find('.select-custom__options');
+
+            trigger.on('click', function (e) {
+                e.stopPropagation();
+                $('.select-custom__options').not(options).removeClass('select-custom__options--open');
+                options.toggleClass('select-custom__options--open');
+            });
+
+            options.find('li').on('click', function () {
+                const opcao = $(this);
+
+                select.val(opcao.data('value'));
+                trigger.text(opcao.text());
+                options.removeClass('select-custom__options--open');
+            });
+        });
+
+        $(document).on('click', function () {
+            $('.select-custom__options').removeClass('select-custom__options--open');
+        });
+    }
+
     if ($('#contact-form').length) {
         
         $('#email').on('input', function() {
