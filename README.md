@@ -50,6 +50,19 @@ Estrutura básica do site em HTML, com organização de pastas e navegação ent
 - Arquivos organizados em `css/`, `js/`, `img/` e `paginas/`;
 - `style.css` e `script.js` criados (ainda vazios, conforme previsto para esta etapa).
 
+### Etapa 2 — Responsividade (PF2)
+
+Adaptação do projeto para diferentes tamanhos de tela, com layout flexível e media queries:
+
+- Meta tag viewport validada em todas as páginas;
+- Layout base em flexbox/grid para o cabeçalho, o menu de navegação, as seções de conteúdo e os cards do catálogo;
+- Imagens responsivas (`max-width: 100%`, `height: auto`) em todas as páginas;
+- Menu de navegação adaptado para um menu mobile (hambúrguer) em telas pequenas;
+- Media queries em 1024px, 768px e 480px, ajustando seções, cards do catálogo e o formulário de filtros do catálogo;
+- Projeto testado em diferentes larguras de tela, sem rolagem horizontal indesejada;
+- Formulário de contato entregue como placeholder ("Em breve"), com os campos já rascunhados em comentário no HTML, para serem ativados na etapa seguinte;
+- Formulário de filtros do catálogo ainda estático nesta etapa (sem JavaScript), com a filtragem funcional prevista para a etapa seguinte.
+
 ## 📄 Licença
 
 Este projeto foi desenvolvido para fins acadêmicos - UFCA, 2026.
