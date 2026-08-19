@@ -166,6 +166,12 @@ h1 {
     background-color: rgba(30, 107, 92, 0.08);
 }
 
+.card-surface {
+    border-radius: 0.95rem;
+    background-color: #FFFFFF;
+    border: 1px solid var(--color-bg-card);
+}
+
 #hero-section {
     flex: 1;
     display: flex;
@@ -327,9 +333,6 @@ h1 {
     height: 17.60rem;
     min-height: fit-content;
     padding: 1.90rem;
-    border-radius: 0.95rem;
-    background-color: #FFFFFF;
-    border: 1px solid var(--color-bg-card);
 }
 
 .about-features__icon {
@@ -414,9 +417,6 @@ h1 {
     gap: 1.90rem;
     max-width: 38.90rem;
     padding: 2.85rem;
-    border-radius: 0.95rem;
-    background-color: #FFFFFF;
-    border: 1px solid var(--color-bg-card);
 }
 
 .participate-card__content {
@@ -525,9 +525,6 @@ h1 {
     max-width: 56rem;
     min-height: 31rem;
     padding: 1.5rem;
-    border-radius: 0.95rem;
-    background-color: #FFFFFF;
-    border: 1px solid var(--color-bg-card);
 }
 
 #contact-form>div {
@@ -714,9 +711,6 @@ h1 {
     flex-direction: column;
     overflow: hidden;
     padding-top: 0.5rem;
-    border-radius: 0.95rem;
-    background-color: #FFFFFF;
-    border: 1px solid var(--color-bg-card);
 }
 
 .catalog-card__figure {
