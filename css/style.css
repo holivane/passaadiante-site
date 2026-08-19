@@ -629,11 +629,11 @@ h1 {
     position: relative;
 }
 
-.catalog-filters__field:nth-child(1) .select-custom {
+.catalog-filters__field--category .select-custom {
     width: 13.25rem;
 }
 
-.catalog-filters__field:nth-child(2) .select-custom {
+.catalog-filters__field--condition .select-custom {
     width: 13.70rem;
 }
 
