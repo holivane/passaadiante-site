@@ -177,7 +177,7 @@ h1 {
     align-items: stretch;
     justify-content: space-between;
     gap: 6.25rem;
-    max-height: 24rem;
+    min-height: 24rem;
     margin-top: 1.5rem;
     padding-inline: var(--padding-base-layout-x);
 }
