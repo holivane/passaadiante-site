@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous" defer></script>
     <script src="../js/script.js" defer></script>
@@ -13,9 +16,9 @@
 <body>
     <header class="header">
         <nav class="menu">
-            <div class="menu__logo">
+            <a href="../index.html" class="menu__logo">
                 <p>PassaAdiante</p>
-            </div>
+            </a>
 
             <button class="menu__mobile" aria-label="Abrir menu">
                 <img src="./../img/menu-icon.png" alt="Ícone Menu Mobile">
@@ -60,7 +63,7 @@
                 se cadastrar e participar, seja como doador ou como receptor.</p>
 
             <div class="participate-content">
-                <article class="participate-card">
+                <article class="participate-card card-surface">
                     <div class="participate-card__content">
                         <div class="participate-card__header">
                             <h2>Sou Doador</h2>
@@ -95,7 +98,7 @@
                     <a href="../index.html#contact-section" class="participate-card__cta participate-card__cta--primary">Comece a Doar</a>
                 </article>
 
-                <article class="participate-card">
+                <article class="participate-card card-surface">
                     <div class="participate-card__content">
                         <div class="participate-card__header">
                             <h2>Sou Receptor</h2>

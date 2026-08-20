@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous" defer></script>
     <script src="../js/script.js" defer></script>
@@ -13,9 +16,9 @@
 <body>
     <header class="header">
         <nav class="menu">
-            <div class="menu__logo">
+            <a href="../index.html" class="menu__logo">
                 <p>PassaAdiante</p>
-            </div>
+            </a>
 
             <button class="menu__mobile" aria-label="Abrir menu">
                 <img src="./../img/menu-icon.png" alt="Ícone Menu Mobile">
@@ -58,7 +61,7 @@
             <h1 class="page-title">Contato</h1>
             <p>Entre em contato conosco preenchendo os dados abaixo e enviando sua mensagem.</p>
 
-            <form id="contact-form" action="#" method="POST">
+            <form id="contact-form" class="card-surface" action="#" method="POST">
 
                 <div>
                     <label for="nome">Nome</label>

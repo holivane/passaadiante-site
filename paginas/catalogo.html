@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous" defer></script>
     <script src="../js/script.js" defer></script>
@@ -13,9 +16,9 @@
 <body>
     <header class="header">
         <nav class="menu">
-            <div class="menu__logo">
+            <a href="../index.html" class="menu__logo">
                 <p>PassaAdiante</p>
-            </div>
+            </a>
 
             <button class="menu__mobile" aria-label="Abrir menu">
                 <img src="./../img/menu-icon.png" alt="Ícone Menu Mobile">
@@ -62,7 +65,7 @@
                     precisa por categoria ou estado de conservação.</p>
 
                 <form id="catalog-filters">
-                    <div class="catalog-filters__field">
+                    <div class="catalog-filters__field catalog-filters__field--category">
                         <label for="filter-category">Categoria</label>
                         <div class="select-custom">
                             <select id="filter-category" name="category">
@@ -85,7 +88,7 @@
                         </div>
                     </div>
 
-                    <div class="catalog-filters__field">
+                    <div class="catalog-filters__field catalog-filters__field--condition">
                         <label for="filter-condition">Estado de conservação</label>
                         <div class="select-custom">
                             <select id="filter-condition" name="condition">
@@ -110,7 +113,7 @@
 
 
             <div class="catalog-grid">
-                <article class="catalog-card" data-category="artes" data-condition="usado">
+                <article class="catalog-card card-surface" data-category="artes" data-condition="usado">
                     <figure class="catalog-card__figure">
                         <img class="catalog-card__image" src="../img/item-image-1.jpg" alt="Kit de Lápis de Cor 48 unidades">
                         <figcaption class="catalog-card__category">Artes</figcaption>
@@ -130,7 +133,7 @@
                     </div>
                 </article>
 
-                <article class="catalog-card" data-category="mochilas" data-condition="seminovo">
+                <article class="catalog-card card-surface" data-category="mochilas" data-condition="seminovo">
                     <figure class="catalog-card__figure">
                         <img class="catalog-card__image" src="../img/item-image-2.jpg" alt="Mochila Escolar Reforçada">
                         <figcaption class="catalog-card__category">Mochilas</figcaption>
@@ -150,7 +153,7 @@
                     </div>
                 </article>
 
-                <article class="catalog-card" data-category="livros" data-condition="novo">
+                <article class="catalog-card card-surface" data-category="livros" data-condition="novo">
                     <figure class="catalog-card__figure">
                         <img class="catalog-card__image" src="../img/item-image-3.jpg" alt="Coleção de Livros Didáticos">
                         <figcaption class="catalog-card__category">Livros</figcaption>

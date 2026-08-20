@@ -1,16 +1,14 @@
 :root {
-    --padding-base-layout-x: 2rem;
+    --padding-base-layout-x: 3.125rem;
     --color-primary: #1E6B5C;
     --color-primary-hover: #154C41;
+    --color-white: #FFFFFF;
     --color-base-text-secondary: #6C757D;
     --color-bg-primary: #F7F4EE;
     --color-bg-secondary: #FCFBF6;
     --color-bg-stats: #1B6B5A;
-    --color-text-logo: #1B6B5A;
     --color-text-stats: #C3DCDA;
-    --color-text-highlight: #1B5B5A;
     --color-bg-badge: #F0E4D3;
-    --color-badge-dot: #E8A33D;
     --color-text-primary: #1A1A2E;
     --color-heading-label: #E8A43B;
     --color-bg-card: #EDE8DF;
@@ -105,9 +103,10 @@ h1 {
 .menu__logo {
     display: flex;
     align-items: center;
-    color: var(--color-text-logo);
+    color: var(--color-bg-stats);
     font-size: 1.25rem;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .menu__actions {
@@ -147,7 +146,7 @@ h1 {
 /* BOTÃO PRINCIPAL */
 .btn--primary {
     background-color: var(--color-primary);
-    color: #FFFFFF;
+    color: var(--color-white);
     border: 1px solid transparent;
 }
 
@@ -166,16 +165,21 @@ h1 {
     background-color: rgba(30, 107, 92, 0.08);
 }
 
+.card-surface {
+    border-radius: 0.95rem;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-bg-card);
+}
+
 #hero-section {
     flex: 1;
     display: flex;
     align-items: stretch;
     justify-content: space-between;
-    max-width: 83.75rem;
-    max-height: 24rem;
+    gap: 6.25rem;
+    min-height: 24rem;
     margin-top: 1.5rem;
-    margin-inline: auto;
-    padding-inline: 2rem;
+    padding-inline: var(--padding-base-layout-x);
 }
 
 #hero-section>div:first-child {
@@ -212,20 +216,20 @@ h1 {
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
-    background-color: var(--color-badge-dot);
+    background-color: var(--color-heading-label);
 }
 
 #hero-section h1 {
     max-width: 49.70rem;
     color: var(--color-text-primary);
     font-weight: 700;
-    font-size: 3.5rem;
+    font-size: 4rem;
     text-transform: none;
     line-height: 1.4;
 }
 
 #hero-section h1 span {
-    color: var(--color-text-highlight);
+    color: var(--color-bg-stats);
 }
 
 #hero-section p {
@@ -249,8 +253,9 @@ h1 {
 
 .stats-section__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.5rem 1rem;
     list-style: none;
     background-color: var(--color-bg-stats);
     padding-inline: 6.25rem;
@@ -260,13 +265,17 @@ h1 {
     font-weight: 500;
 }
 
+.stats-section__list li {
+    white-space: nowrap;
+}
+
 .stats-section__list li:not(:first-child)::before {
     content: "•";
     margin-right: 1rem;
 }
 
 #about-section {
-    padding-inline: 2rem;
+    padding-inline: var(--padding-base-layout-x);
     padding-block: 2rem;
 }
 
@@ -328,9 +337,6 @@ h1 {
     height: 17.60rem;
     min-height: fit-content;
     padding: 1.90rem;
-    border-radius: 0.95rem;
-    background-color: #FFFFFF;
-    border: 1px solid var(--color-bg-card);
 }
 
 .about-features__icon {
@@ -351,7 +357,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding-inline: 2rem;
+    padding-inline: var(--padding-base-layout-x);
     padding-block: 2rem;
     text-align: center;
 }
@@ -388,7 +394,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-inline: 2rem;
+    padding-inline: var(--padding-base-layout-x);
     padding-block: 2rem;
 }
 
@@ -415,9 +421,6 @@ h1 {
     gap: 1.90rem;
     max-width: 38.90rem;
     padding: 2.85rem;
-    border-radius: 0.95rem;
-    background-color: #FFFFFF;
-    border: 1px solid var(--color-bg-card);
 }
 
 .participate-card__content {
@@ -461,7 +464,7 @@ h1 {
     height: 3.65rem;
     flex-shrink: 0;
     border-radius: 50%;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 
 .participate-card__steps--primary li::before {
@@ -491,7 +494,7 @@ h1 {
 
 .participate-card__cta--primary {
     background-color: var(--color-bg-stats);
-    color: #FFFFFF;
+    color: var(--color-white);
     border: 1px solid transparent;
 }
 
@@ -505,7 +508,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-inline: 2rem;
+    padding-inline: var(--padding-base-layout-x);
     padding-block: 2rem;
 }
 
@@ -526,9 +529,6 @@ h1 {
     max-width: 56rem;
     min-height: 31rem;
     padding: 1.5rem;
-    border-radius: 0.95rem;
-    background-color: #FFFFFF;
-    border: 1px solid var(--color-bg-card);
 }
 
 #contact-form>div {
@@ -549,7 +549,7 @@ h1 {
     padding: 0.65rem 0.85rem;
     border-radius: 0.5rem;
     border: 1px solid var(--color-bg-card);
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     font-size: 0.875rem;
     color: var(--color-text-primary);
 }
@@ -591,6 +591,7 @@ h1 {
 
 #catalog-section {
     padding-inline: var(--padding-base-layout-x);
+    padding-block: 2rem;
 }
 
 .catalog-intro {
@@ -634,11 +635,11 @@ h1 {
     position: relative;
 }
 
-.catalog-filters__field:nth-child(1) .select-custom {
+.catalog-filters__field--category .select-custom {
     width: 13.25rem;
 }
 
-.catalog-filters__field:nth-child(2) .select-custom {
+.catalog-filters__field--condition .select-custom {
     width: 13.70rem;
 }
 
@@ -647,7 +648,7 @@ h1 {
     padding: 0.5rem;
     border: 1px solid var(--color-bg-card);
     border-radius: 0.5rem;
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     text-align: left;
     font-size: 0.9rem;
     color: var(--color-text-primary);
@@ -662,7 +663,7 @@ h1 {
     right: 0;
     z-index: 10;
     list-style: none;
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     border: 1px solid var(--color-bg-card);
     border-radius: 0.5rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -714,9 +715,6 @@ h1 {
     flex-direction: column;
     overflow: hidden;
     padding-top: 0.5rem;
-    border-radius: 0.95rem;
-    background-color: #FFFFFF;
-    border: 1px solid var(--color-bg-card);
 }
 
 .catalog-card__figure {
@@ -846,7 +844,7 @@ footer {
     }
 
     .menu__mobile {
-        background-color: #FFFFFF;
+        background-color: var(--color-white);
         width: 2.5rem;
         height: 2.5rem;
         display: flex;
