@@ -20,6 +20,7 @@ doadores a estudantes que precisam de recursos educacionais.
 - HTML5
 - CSS3
 - JavaScript
+- jQuery
 
 ## 📁 Estrutura do Projeto
 
@@ -62,6 +63,16 @@ Adaptação do projeto para diferentes tamanhos de tela, com layout flexível e 
 - Projeto testado em diferentes larguras de tela, sem rolagem horizontal indesejada;
 - Formulário de contato entregue como placeholder ("Em breve"), com os campos já rascunhados em comentário no HTML, para serem ativados na etapa seguinte;
 - Formulário de filtros do catálogo ainda estático nesta etapa (sem JavaScript), com a filtragem funcional prevista para a etapa seguinte.
+
+### Etapa 3 — Formulário, JavaScript e revisão final (PF3)
+
+Implementação da interatividade do site com JavaScript e jQuery, além da revisão geral do projeto:
+
+- Formulário de contato funcional (`paginas/contato.html`), com validação via jQuery: campos obrigatórios, formato de e-mail e mensagens de sucesso/erro exibidas ao usuário;
+- Filtro do catálogo funcional por categoria e estado de conservação, com mensagem de "nenhum resultado encontrado" quando nenhum card corresponde ao filtro escolhido;
+- Menu de opções customizado (dropdown) para os campos de filtro do catálogo, sincronizado com os `<select>` originais;
+- Menu mobile interativo (abrir/fechar via clique, incluindo clique fora do menu);
+- Revisão geral de estrutura, CSS (cores, fontes, espaçamentos, nomenclatura de classes) e responsividade em todas as páginas.
 
 ## 📄 Licença
 
